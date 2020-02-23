@@ -7,11 +7,12 @@
 extents = Vector2( 58.7685, 64.9884 )
 
 [node name="Space_Ship" type="KinematicBody2D"]
-position = Vector2( 517.248, 301.471 )
+position = Vector2( 703.848, 420.403 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+Speed = 2
 
 [node name="Sprite" type="Sprite" parent="."]
 rotation = 1.5708
@@ -20,10 +21,10 @@ region_enabled = true
 region_rect = Rect2( 60, 70, 140, 110 )
 
 [node name="Collider" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( -2.04391, -3.21188 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2( 1.05445, 1.1315 )
 current = true
-smoothing_enabled = true
+zoom = Vector2( 1.4, 1.4 )
